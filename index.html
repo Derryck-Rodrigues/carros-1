@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinhos do Seu Zezinho</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#carros">Carros</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#cadastro">Cadastro</a></li>
+                <li><a href="https://www.instagram.com/derryckrodrigues/" target="_blank">Instagram</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="section-home">
+            <h1>Bem-vindo ao Seu Zezinho Carros</h1>
+            <p>Encontre os melhores carros de luxo à venda!</p>
+        </section>
+
+        <section id="carros" class="section-carros">
+            <h2>Carros de Luxo à Venda</h2>
+            <div class="carro">
+                <h3>Ferrari F8 Tributo</h3>
+                <img src="https://img.gta5-mods.com/q95/images/ferrari-f8-tributo-2020-add-on/12b203-1.jpg" alt="Ferrari F8 Tributo">
+                <p>Preço: R$ 3.500.000</p>
+                <button onclick="comprarCarro('Ferrari F8 Tributo')">Comprar</button>
+            </div>
+            <div class="carro">
+                <h3>Lamborghini Aventador</h3>
+                <img src="https://c.wallhere.com/photos/08/3c/pink_2_black_london_car_design_photo_italian-508976.jpg!d">
+                <p>Preço: R$ 4.200.000</p>
+                <button onclick="comprarCarro('Lamborghini Aventador')">Comprar</button>
+            </div>
+            <div class="carro">
+                <h3>Chevy Impala 67</h3>
+                <img src="https://noticiassobreautomovel.com.br/wp-content/uploads/2024/03/Chevy-Impala-67.jpg" alt="Chevy Impala 67">
+                <p>Preço: R$ 9.200.000</p>
+                <button onclick="comprarCarro('Chevy Impala 67')">Comprar</button>
+            </div>
+        </section>
+
+        <section id="contato" class="section-contato">
+            <h2>Contato</h2>
+            <p>Fale conosco pelo WhatsApp</p>
+            <button onclick="window.open('https://web.whatsapp.com/', '_blank')">Contato WhatsApp</button>
+        </section>
+
+        <section id="cadastro" class="section-cadastro">
+            <h2>Cadastro de Usuário</h2>
+            <form id="formCadastro" onsubmit="return validarFormulario()">
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha" required>
+                </div>
+                <button type="submit">Cadastrar</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+
+

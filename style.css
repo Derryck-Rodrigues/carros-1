@@ -1,0 +1,174 @@
+/* Importação de fontes */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Estilo global */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #1a1a1a;
+    color: rgb(255, 255, 255);
+    padding: 1rem 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #333;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+main {
+    padding-top: 80px; /* Para compensar a barra de navegação fixa */
+}
+
+.section-carros, .section-contato, .section-cadastro {
+    padding: 2rem;
+    text-align: center;
+}
+
+.section-carros h2, .section-contato h2, .section-cadastro h2 {
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.carro {
+    margin: 2rem 0;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carro:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.carro h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.carro img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.carro p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+button {
+    background-color: #1a1a1a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #333;
+    transform: scale(1.05);
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: rgb(63, 63, 63);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+form input,
+form button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+form button {
+    margin-top: 10px;
+    background-color: #1a1a1a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+form button:hover {
+    background-color: #333;
+    transform: scale(1.05);
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .section-carros, .section-contato, .section-cadastro {
+        padding: 1rem;
+    }
+
+    form {
+        padding: 1rem;
+    }
+}
